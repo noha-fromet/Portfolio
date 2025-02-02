@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background: #f8f8f8;
+        }
+        header {
+            background: #1e1e2f;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav {
+            margin-top: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .slider-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .slider-container h2 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            color: #1e1e2f;
+        }
+        .slider {
+            max-width: 800px;
+            margin: auto;
+            padding: 1rem 0;
+        }
+        .slider img {
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            border-radius: 8px;
+            background: #fff;
+        }
+        .slick-prev, .slick-next {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            z-index: 1000;
+        }
+        .slick-prev:hover, .slick-next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .slick-prev:before, .slick-next:before {
+            font-size: 25px;
+            color: white;
+        }
+        footer {
+            background: #1e1e2f;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mes Projets</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="Réalisations.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="slider-container">
+        <h3>Mes Réalisations:</h3>
+        <h2>Cuisines</h2>
+        <div class="slider cuisine-slider">
+            <div><img src="cuisine (1).jpg" alt="Cuisine sur mesure 1"></div>
+            <div><img src="cuisine (2).jpg" alt="Cuisine sur mesure 2"></div>
+            <div><img src="cuisine (3).jpg" alt="Cuisine sur mesure 3"></div>
+            <div><img src="cuisine (4).jpg" alt="Cuisine sur mesure 4"></div>
+            <div><img src="cuisine (5).jpg" alt="Cuisine sur mesure 5"></div>
+            <div><img src="cuisine (6).jpg" alt="Cuisine sur mesure 6"></div>
+            <div><img src="cuisine (7).jpg" alt="Cuisine sur mesure 7"></div>
+            <div><img src="cuisine (8).jpg" alt="Cuisine sur mesure 8"></div>
+            <div><img src="cuisine (9).jpg" alt="Cuisine sur mesure 9"></div>
+            <div><img src="cuisine (10).jpg" alt="Cuisine sur mesure 10"></div>
+            <div><img src="cuisine (11).jpg" alt="Cuisine sur mesure 11"></div>
+            <div><img src="cuisine (12).jpg" alt="Cuisine sur mesure 12"></div>
+            <div><img src="cuisine (13).jpg" alt="Cuisine sur mesure 13"></div>
+            <div><img src="cuisine (14).jpg" alt="Cuisine sur mesure 14"></div>
+            <div><img src="cuisine (15).jpg" alt="Cuisine sur mesure 15"></div>
+            <div><img src="cuisine (16).jpg" alt="Cuisine sur mesure 16"></div>
+            <div><img src="cuisine (17).jpg" alt="Cuisine sur mesure 17"></div>
+            <div><img src="cuisine (18).jpg" alt="Cuisine sur mesure 18"></div>
+            <div><img src="cuisine (19).jpg" alt="Cuisine sur mesure 19"></div>
+        </div>
+    </section>
+
+    <section class="slider-container">
+        <h2>Autres Poses</h2>
+        <div class="slider other-poses-slider">
+            <div><img src="dressing1.jpg" alt="Dressing sur mesure 1"></div>
+            <div><img src="dressing2.jpg" alt="Dressing sur mesure 2"></div>
+            <div><img src="dressing3.jpg" alt="Dressing sur mesure 3"></div>
+            <div><img src="tv.jpg" alt="Pose de TV"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Renov & Design. Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: true,
+                prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
+                nextArrow: '<button type="button" class="slick-next">&#10095;</button>'
+            });
+        });
+    </script>
+</body>
+</html>
